@@ -70,6 +70,7 @@ my_fun5 <- function(x,y){
   x+y
 }
 ## set output to a variable when calling
+## variable and value now in Global Environment
 xy <- my_fun5(x=2, y=5)
 ## no output until call function variable
 xy
