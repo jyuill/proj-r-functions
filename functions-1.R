@@ -55,3 +55,21 @@ my_fun3 <- function(a,b,c,d){
 }
 ## best to use names when more than 2 args
 my_fun3(a=1,b=3,c=6,d=10)
+
+### FUNCTION 4: no args specified in function
+## don't need to list args if not passing them in
+my_fun4 <- function(){
+  x <- 2
+  y <- 3
+  x+y
+}
+my_fun4()
+
+### FUNCTION 5: setting variables based on values created in function
+my_fun5 <- function(x,y){
+  x+y
+}
+## set output to a variable when calling
+xy <- my_fun5(x=2, y=5)
+## no output until call function variable
+xy
