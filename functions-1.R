@@ -74,3 +74,28 @@ my_fun5 <- function(x,y){
 xy <- my_fun5(x=2, y=5)
 ## no output until call function variable
 xy
+
+### FUNCTION 6: setting multiple variables
+my_fun6 <- function(x,y,z){
+  total <- x+y+z
+  prod <- x*y*z
+}
+## only returns last calculation
+my_fun6(3,5,7)
+## also only returns last calc
+xyz <- my_fun6(2,4,6) 
+xyz
+
+## break into two functions?
+my_fun6s <- function(x,y,z){
+  total <- x+y+z
+}
+my_fun6p <- function(x,y,z){
+  prod <- x*y*z
+}
+x <- 2
+y <- 4
+z <- 6
+ttl <- my_fun6s(x,y,z)
+prod <- my_fun6p(x,y,z)
+c(ttl, prod)
