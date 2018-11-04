@@ -99,3 +99,18 @@ z <- 6
 ttl <- my_fun6s(x,y,z)
 prod <- my_fun6p(x,y,z)
 c(ttl, prod)
+
+### FUNCTION 7: combine variables within function to produce multiple
+my_fun7 <- function(x,y,z){
+  total <- x+y+z
+  prod <- x*y*z
+  c(total, prod)
+}
+
+x <- 2
+y <- 4
+z <- 6
+tp <- my_fun7(x,y,z)
+tp
+tp[1]
+tp[2]
