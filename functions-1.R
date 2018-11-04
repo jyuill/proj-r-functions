@@ -114,3 +114,27 @@ tp <- my_fun7(x,y,z)
 tp
 tp[1]
 tp[2]
+
+### FUNCTION 8: get and store different results for different inputs
+my_fun8 <- function(x,y,z){
+  prod <- x*y*z
+}
+
+xvar <- 2
+yvar <- 3
+zvar <- 4
+v1 <- my_fun8(xvar, yvar, zvar)
+v1
+
+xvar <- 4
+yvar <- 6
+zvar <- 8
+v2 <- my_fun8(xvar, yvar, zvar)
+v2
+
+df <- data.frame(type=c("solid","dotted"),
+                 units=c(v1,v2))
+
+library(tidyverse)
+ggplot(df, aes(x=type, y=units))+geom_bar(stat='identity')
+
